@@ -38,8 +38,8 @@ Question to answer: Given the data about a new movie can we predict whether or n
 
 Description of the data source: Dataset is titled "TMBD Movie Dataset". Data was found from https://www.kaggle.com/datasets/successikuku/tmbd-movie-dataset. Dataset contains 1286 rows and has 24 columns. 
 
-The column details of the "TMBD Movie Datset" are:
-Column Details
+### The column details of the "TMBD Movie Datset" are:
+
 ID: Movie ID
 
 Popularity: Popularity score
@@ -49,20 +49,33 @@ Budget: Amount spent to make the movie
 Revenue: Amount realized from the movie
 
 original title: Movie title
+
 Cast: Actors & Actresses in the movie
+
 Homepage: Movie website
+
 Director: Director(s) of the movie
+
 Tagline: Catchphrase(s)/slogan of the movie
+
 keywords: Words associated with a movie
+
 Overview: Movie Summary
+
 Runtime: length of a movie
+
 Genres: Category
+
 Production companies: Companies that produced the movie
+
 Release date: Date movie was released
-Vote count:
-Vote average
+
+Vote count: Vote average
+
 Release year: year movie was released
+
 Budget adj: Budget In terms of 2010 dollars
+
 Revenue adj: Revenue in terms of 2010 dollars
 
 
