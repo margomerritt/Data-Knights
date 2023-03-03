@@ -31,7 +31,7 @@ A group chat was formed on Slack. Slack is the primary form of communication for
 
 Topic: Movie Productions
 
-Reason for topic choice: 
+Reason for topic choice: Topic was chosen to explore the process of how oscar winners were chosen. 
 
 Description of the data source: Dataset is titled "TMBD Movie Dataset". Data was found from https://www.kaggle.com/datasets/successikuku/tmbd-movie-dataset. Dataset contains 1286 rows and has 24 columns. 
 
