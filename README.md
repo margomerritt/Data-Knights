@@ -41,9 +41,13 @@ Description of the data source: Dataset is titled "TMBD Movie Dataset". Data was
 The column details of the "TMBD Movie Datset" are:
 Column Details
 ID: Movie ID
+
 Popularity: Popularity score
+
 Budget: Amount spent to make the movie
+
 Revenue: Amount realized from the movie
+
 original title: Movie title
 Cast: Actors & Actresses in the movie
 Homepage: Movie website
