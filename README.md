@@ -3,6 +3,7 @@
 ## Overview
 
 ### Purpose
+Project uses movie production data to predict whether a new movie is likely to win an Oscar. Two relevant data sets are joined to create our table, then pre-process the data for supervised machine learning. Findings will be presented in a dashboard in Tableau.
 
 ### Content Outline
 
