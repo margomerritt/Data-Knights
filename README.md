@@ -29,13 +29,13 @@ A group chat was formed on Slack. Slack is the primary form of communication for
 
 ### Presentation for Segment 1
 
-Topic: 
+Topic: Movie Productions
 
-Reason for topic choice:
+Reason for topic choice: 
 
-Description of the data source:
+Description of the data source: Dataset is titled "TMBD Movie Dataset". Data was found from https://www.kaggle.com/datasets/successikuku/tmbd-movie-dataset. Dataset contains 1286 rows and has 24 columns. 
 
-Question to answer:
+Question to answer: Given the data about a new movie can we predict whether or not it will win an oscar? 
 
 ## Progess Notes
 1. March 2, 2023
