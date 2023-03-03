@@ -11,7 +11,7 @@ Topic: Movie Productions
 
 Question to answer: To predict whether or not a new movie is likely to win an Oscar. 
 
-Dataset (link):
+Dataset (link): https://www.kaggle.com/datasets/successikuku/tmbd-movie-dataset
 
 Database:
 
