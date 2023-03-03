@@ -89,7 +89,7 @@ Summary of project goals:
 We want to use movie production data to predict whether a new movie is likely to win an Oscar. We will start by joining two relevant data sets to create our table, then pre-process the data for supervised machine learning. To present our findings, we will create a dashboard in Tableau.
 
 
-#### March 3, 2023
+### March 3, 2023
 
 Added a branch for each teammember. Finalized datasource. Inspected datasource. Added raw dataset to repo. Explored database and machine learning ideas.  
 
