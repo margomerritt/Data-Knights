@@ -2,6 +2,7 @@
 
 ## Overview
 
+Communication protocols: A group chat was formed on Slack. Slack is the primary form of communication for this project. We have one stand-in zoom scheduled per week in addition to the two regularly scheduled class times. Additional zoom meetings will be scheduled as needed throughout the course of this project.
 
 ## Segment 1
 
@@ -20,6 +21,14 @@ Technologies to use:
 ### Content for Segment 1
 
 ### Presentation for Segment 1
+
+Topic: 
+
+Reason for topic choice:
+
+Description of the data source:
+
+Question to answer:
 
 ## Progess Notes
 1. March 2, 2023
