@@ -2,6 +2,10 @@
 
 ## Overview
 
+## Purpose
+
+## Content Outline
+
 Topic: Movie Productions
 
 Question to answer: To predict whether or not a new movie is likely to win an Oscar. 
