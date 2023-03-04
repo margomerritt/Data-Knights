@@ -37,7 +37,7 @@ Reason for topic choice: Topic was chosen to explore the process of how oscar wi
 
 Question to answer: Given the data about a new movie can we predict whether or not it will win an oscar? 
 
-Link to slide deck: https://docs.google.com/presentation/d/1KQ_0f8fhyqlH0kWtL7cBZ4c7L5QDG53hobkgUXBAJ3k/edit?usp=sharing
+Link to slide deck: https://docs.google.com/presentation/d/1PBKEbv_1AAcUWEmc93uS9961zodiyv0a-1vvWwRyaM0/edit#slide=id.g215d28312ee_0_0
 
 Description of the data source: Dataset is titled "TMBD Movie Dataset". Data was found from https://www.kaggle.com/datasets/successikuku/tmbd-movie-dataset. Dataset contains 1286 rows and has 24 columns. 
 
