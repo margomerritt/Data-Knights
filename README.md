@@ -81,7 +81,7 @@ Revenue adj: Revenue in terms of 2010 dollars
 
 
 
-## Progess Notes
+## Progress Notes
 
 ### March 2, 2023
 
@@ -96,3 +96,4 @@ Added a branch for each teammember. Finalized datasource. Inspected datasource. 
 * Margo - google decks / presentation
 * Amy and John - database
 * Ken -  Machine Learning Mockup
+* Amy - start building website!
