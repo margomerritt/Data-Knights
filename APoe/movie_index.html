@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winning_Movies</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="static/css/movie_style.css" />
+</head>
+<body>
+    <body class="bg-info">
+        <div class="wrapper">
+          <!-- Navbar -->
+          <nav class="navbar navbar-info bg-info navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">Winning Movies</a>
+          </nav>
+          <!-- Jumbotron -->
+          <div class="jumbotron">
+            <h1 class="display-4">Who will WIN in the Oscars?</h1>
+          </div>
+    
+          <!-- Article title and paragraph -->
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-4 article-title">
+                <h3>Winning Movies: What makes an Oscar? <small>More than 1000 movies give insights</small></h3>
+              </div>
+              <div class="col-md-8 article-p">
+                <p>
+                  Write a paragraph here explaining what we are doing. 
+                </p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Filter -->
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-3">
+                <form class="bg-info">
+                  <p>Filter Search</p>
+                  <ul class="list-group">
+                    <li class="list-group-item bg-info">
+                        <label for="Movie Title">Enter a Movie</label>
+                        <input type="text" placeholder="Forrest Gump" id="title" class="filters"/>
+                      </li>
+                    <li class="list-group-item bg-info">
+                      <label for="datetime">Enter Date</label>
+                      <input type="text" placeholder="1/10/2010" id="datetime" class="filters"/>
+                    </li>
+                    <!--remove li element that created button-->
+                    <!-- Create a new list for each City, State, Country, and Shape-->
+                    <li class="list-group-item bg-info">
+                      <label for="City">Enter a City</label>
+                      <input type="text" placeholder="city name" id="city" class="filters"/>
+                    </li>
+                    <li class="list-group-item bg-info">
+                      <label for="State">Enter a State</label>
+                      <input type="text" placeholder="co" id="state" class="filters"/>
+                    </li>
+                    
+                    <li class="list-group-item bg-info">
+                      <label for="Shape">Enter a Shape</label>
+                      <input type="text" placeholder="square" id="shape" class="filters"/>
+                    </li>
+                  </ul>
+                </form>
+              </div>
+    
+              <!-- Table -->
+
+              <!--<div class="col-md-9">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Date</th>
+                      <th>City</th>
+                      <th>State</th>
+                      <th>Country</th>
+                      <th>Shape</th>
+                      <th>Duration</th>
+                      <th>Comments</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+        <script src="static/js/data.js"></script>
+        <script src="static/js/ufo_app_challenge.js"></script> --> 
+      </body>
+    </html>
+    
+    
+</body>
+</html>
