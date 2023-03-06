@@ -42,45 +42,8 @@ Link to slide deck: https://docs.google.com/presentation/d/1PBKEbv_1AAcUWEmc93uS
 ### First datasource:
 Dataset is titled "TMBD Movie Dataset". Data was found from https://www.kaggle.com/datasets/successikuku/tmbd-movie-dataset. Dataset contains 1286 rows and has 24 columns. 
 
-### The column details of the "TMBD Movie Dataset" are:
+Screenshot of the "TMBD Movie Dataset":
 
-ID: Movie ID
-
-Popularity: Popularity score
-
-Budget: Amount spent to make the movie
-
-Revenue: Amount realized from the movie
-
-original title: Movie title
-
-Cast: Actors & Actresses in the movie
-
-Homepage: Movie website
-
-Director: Director(s) of the movie
-
-Tagline: Catchphrase(s)/slogan of the movie
-
-keywords: Words associated with a movie
-
-Overview: Movie Summary
-
-Runtime: length of a movie
-
-Genres: Category
-
-Production companies: Companies that produced the movie
-
-Release date: Date movie was released
-
-Vote count: Vote average
-
-Release year: year movie was released
-
-Budget adj: Budget In terms of 2010 dollars
-
-Revenue adj: Revenue in terms of 2010 dollars
 ![Screen Shot 2023-03-04 at 4 23 02 PM](https://user-images.githubusercontent.com/111299372/223214862-d552ed9f-c377-48ca-974c-e84da6e39ebb.png)
 
 ![Screen Shot 2023-03-04 at 4 24 57 PM](https://user-images.githubusercontent.com/111299372/223214872-f0e07932-db64-4eda-becb-beb0e3913835.png)
@@ -89,6 +52,8 @@ Revenue adj: Revenue in terms of 2010 dollars
 ### Second datasource
 
 The second datasoure is titled "The Oscar Award, 1927 - 2023" and was found at https://www.kaggle.com/datasets/unanimad/the-oscar-award. This file is scraped from the Academy Awards Database which contains the record of past Academy Award winners and nominees between 1927 and 2018.
+
+Screenshot of "The Oscar Award, 1927 - 2023" data:
 
 ![Screen Shot 2023-03-04 at 4 14 55 PM](https://user-images.githubusercontent.com/111299372/223214821-cbf409bb-d803-475c-a8ed-b77dc3608237.png)
 
