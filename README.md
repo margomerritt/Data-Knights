@@ -26,8 +26,11 @@ A group chat was formed on Slack. Slack is the primary form of communication for
 
 ## Segment 1
 
-
 ### Content for Segment 1
+
+Machine Learning Model: A write up on our machine learning model is located in the progess notes from March 5, 2023. A mockup of the machine learning model has been written. The files are titled "Neural_Network.ipynb" and "Random_Forest.ipynb". They are were pushed to the KAV_branch and have been merged with the main branch. 
+
+Database:
 
 ### Presentation for Segment 1
 
