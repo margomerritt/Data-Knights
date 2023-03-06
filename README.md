@@ -74,7 +74,7 @@ We want to use movie production data to predict whether a new movie is likely to
 ### March 3, 2023
 
 Added a branch for each teammember. Finalized datasource. Inspected datasource. Added two raw datasets to repo. Explored database and machine learning ideas. A google slide deck was started for the final project presentation. Assigned tasks for the upcoming week for segment 1.
-* Margo - google decks / presentation
+* Margo - google decks / presentation / tableau
 * Amy and John - database
 * Ken -  Machine Learning Mockup
 * Amy - start building website!
