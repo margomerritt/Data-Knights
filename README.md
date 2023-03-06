@@ -89,7 +89,8 @@ The second datasoure is titled "The Oscar Award, 1927 - 2023" and was found at h
 
 Summary of project goals:
 
-We want to use movie production data to predict whether a new movie is likely to win an Oscar. We will start by joining two relevant data sets to create our table, then pre-process the data for supervised machine learning. To present our findings, we will create a dashboard in Tableau.
+We want to use movie production data to predict whether a new movie is likely to win an Oscar. We will start by joining two relevant data sets to create our table, then pre-process the data for supervised machine learning. To present our findings, we will create a dashboard in Tableau. Consists of 10,759 rows and 7 columns. The 7 columns are: year of the film, year of the ceremony, which ceremony it was, category, name, film, and winning status. 
+
 
 
 ### March 3, 2023
