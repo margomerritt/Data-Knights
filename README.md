@@ -7,9 +7,9 @@ Project uses movie production data to predict whether a new movie is likely to w
 
 ### Content Outline
 
-Topic: Movie Productions
+Topic: Movie Productions and Oscar Awards
 
-Question to answer: To predict whether or not a new movie is likely to win an Oscar. 
+Question to answer: To predict whether or not a new movie will win an Oscar. 
 
 Dataset (link):
 https://www.kaggle.com/datasets/successikuku/tmbd-movie-dataset
@@ -31,9 +31,9 @@ A group chat was formed on Slack. Slack is the primary form of communication for
 
 ### Presentation for Segment 1
 
-Topic: Movie Productions
+Topic: Movie Productions and Oscar Awards
 
-Reason for topic choice: Topic was chosen to explore the process of how oscar winners were chosen. 
+Reason for topic choice: Topic was chosen to explore the process of how oscar winners were chosen. Analyzing a dataset related to movie production will help to explore the process of how Oscar winners are picked.
 
 Question to answer: Given the data about a new movie can we predict whether or not it will win an oscar? 
 
@@ -81,7 +81,7 @@ Budget adj: Budget In terms of 2010 dollars
 
 Revenue adj: Revenue in terms of 2010 dollars
 
-
+The second datasoure is titled "The Oscar Award, 1927 - 2023" and was found at https://www.kaggle.com/datasets/unanimad/the-oscar-award. This file is scraped from the Academy Awards Database which contains the record of past Academy Award winners and nominees between 1927 and 2018.
 
 ## Progress Notes
 
