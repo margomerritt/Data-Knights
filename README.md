@@ -81,10 +81,17 @@ Release year: year movie was released
 Budget adj: Budget In terms of 2010 dollars
 
 Revenue adj: Revenue in terms of 2010 dollars
+![Screen Shot 2023-03-04 at 4 23 02 PM](https://user-images.githubusercontent.com/111299372/223214862-d552ed9f-c377-48ca-974c-e84da6e39ebb.png)
+
+![Screen Shot 2023-03-04 at 4 24 57 PM](https://user-images.githubusercontent.com/111299372/223214872-f0e07932-db64-4eda-becb-beb0e3913835.png)
+
 
 ### Second datasource
 
 The second datasoure is titled "The Oscar Award, 1927 - 2023" and was found at https://www.kaggle.com/datasets/unanimad/the-oscar-award. This file is scraped from the Academy Awards Database which contains the record of past Academy Award winners and nominees between 1927 and 2018.
+
+![Screen Shot 2023-03-04 at 4 14 55 PM](https://user-images.githubusercontent.com/111299372/223214821-cbf409bb-d803-475c-a8ed-b77dc3608237.png)
+
 
 ## Progress Notes
 
