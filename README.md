@@ -39,9 +39,10 @@ Question to answer: Given the data about a new movie can we predict whether or n
 
 Link to slide deck: https://docs.google.com/presentation/d/1PBKEbv_1AAcUWEmc93uS9961zodiyv0a-1vvWwRyaM0/edit#slide=id.g215d28312ee_0_0
 
-Description of the data source: Dataset is titled "TMBD Movie Dataset". Data was found from https://www.kaggle.com/datasets/successikuku/tmbd-movie-dataset. Dataset contains 1286 rows and has 24 columns. 
+### First datasource:
+Dataset is titled "TMBD Movie Dataset". Data was found from https://www.kaggle.com/datasets/successikuku/tmbd-movie-dataset. Dataset contains 1286 rows and has 24 columns. 
 
-### The column details of the "TMBD Movie Datset" are:
+### The column details of the "TMBD Movie Dataset" are:
 
 ID: Movie ID
 
@@ -80,6 +81,8 @@ Release year: year movie was released
 Budget adj: Budget In terms of 2010 dollars
 
 Revenue adj: Revenue in terms of 2010 dollars
+
+### Second datasource
 
 The second datasoure is titled "The Oscar Award, 1927 - 2023" and was found at https://www.kaggle.com/datasets/unanimad/the-oscar-award. This file is scraped from the Academy Awards Database which contains the record of past Academy Award winners and nominees between 1927 and 2018.
 
