@@ -65,7 +65,7 @@ Screenshot of the "TMBD Movie Dataset":
 
 ### Second datasource
 
-The second datasoure is titled "The Oscar Award, 1927 - 2023" and was found at https://www.kaggle.com/datasets/unanimad/the-oscar-award. This file is scraped from the Academy Awards Database which contains the record of past Academy Award winners and nominees between 1927 and 2018.
+The second datasoure is titled "The Oscar Award, 1927 - 2023" and was found at https://www.kaggle.com/datasets/unanimad/the-oscar-award. This file is scraped from the Academy Awards Database which contains the record of past Academy Award winners and nominees between 1927 and 2023.
 
 Screenshot of "The Oscar Award, 1927 - 2023" data:
 
