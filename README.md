@@ -15,11 +15,11 @@ Dataset (link):
 https://www.kaggle.com/datasets/successikuku/tmbd-movie-dataset
 https://www.kaggle.com/datasets/unanimad/the-oscar-award
 
-Database:
+Database: Tables created in pgAdmin from the two datasets. 
 
 Machine Learning Model: Supervised Machine Learning
 
-Technologies to use:
+Technologies to use: Jupyter notebooks, Python, Pandas, SQL, pgAdmin, Machine Learning 
 
 ### Communication protocols
 A group chat was formed on Slack. Slack is the primary form of communication for this project. We have one stand-in zoom scheduled per week in addition to the two regularly scheduled class times. Additional zoom meetings will be scheduled as needed throughout the course of this project.
@@ -31,6 +31,8 @@ A group chat was formed on Slack. Slack is the primary form of communication for
 Machine Learning Model: A write up on our machine learning model is located in the progess notes from March 5, 2023. A mockup of the machine learning model has been written. The files are titled "Neural_Network.ipynb" and "Random_Forest.ipynb". They are were pushed to the KAV_branch and have been merged with the main branch. 
 
 Database:
+
+The data was imported into a Jupyter notebook. The data was then imported to SQL using Pandas. The database files and analysis are currently located on the JAK_branch. This branch also has the SQL queries saved to it and additional screenshots of the SQL tables in pgAdmin. 
 
 <img width="869" alt="Screenshot 2023-03-06 at 9 13 00 PM" src="https://user-images.githubusercontent.com/114188120/223302687-a4dc14eb-a6fe-48e1-a1f8-6216e5a6cd19.png">
 
