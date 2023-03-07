@@ -1,0 +1,9 @@
+SELECT * FROM new_movie_table
+
+ALTER TABLE "new_movie_table"
+DROP COLUMN "Unnamed: 0"
+
+SELECT * FROM new_movie_table
+
+ALTER TABLE "new_movie_table"
+DROP COLUMN "index"
