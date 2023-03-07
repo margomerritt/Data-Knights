@@ -32,7 +32,8 @@ Machine Learning Model: A write up on our machine learning model is located in t
 
 Database:
 
-<img width="664" alt="Screenshot 2023-03-06 at 9 12 28 PM" src="https://user-images.githubusercontent.com/114188120/223302276-9942f701-88cc-4a88-87dd-ba24891c99ba.png">
+<img width="869" alt="Screenshot 2023-03-06 at 9 13 00 PM" src="https://user-images.githubusercontent.com/114188120/223302687-a4dc14eb-a6fe-48e1-a1f8-6216e5a6cd19.png">
+
 
 <img width="814" alt="Screenshot 2023-03-06 at 8 58 58 PM" src="https://user-images.githubusercontent.com/114188120/223302297-fea8ceb1-31d8-4a5f-8e8a-6a97d0ed79d9.png">
 
