@@ -32,6 +32,13 @@ Machine Learning Model: A write up on our machine learning model is located in t
 
 Database:
 
+<img width="664" alt="Screenshot 2023-03-06 at 9 12 28 PM" src="https://user-images.githubusercontent.com/114188120/223302276-9942f701-88cc-4a88-87dd-ba24891c99ba.png">
+
+<img width="814" alt="Screenshot 2023-03-06 at 8 58 58 PM" src="https://user-images.githubusercontent.com/114188120/223302297-fea8ceb1-31d8-4a5f-8e8a-6a97d0ed79d9.png">
+
+<img width="749" alt="Screenshot 2023-03-06 at 8 12 06 PM" src="https://user-images.githubusercontent.com/114188120/223302321-0be30e64-9439-4564-bd9b-4acdafd25a24.png">
+
+
 ### Presentation for Segment 1
 
 Topic: Movie Productions and Oscar Awards
