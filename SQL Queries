@@ -16,3 +16,7 @@ FROM new_movie_table ;
 
 
 SELECT * FROM oscars
+
+SELECT film, winner, oscars.name
+FROM oscars
+WHERE winner = true
