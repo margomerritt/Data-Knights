@@ -13,3 +13,6 @@ SELECT
 revenue_adj, profit, popularity_level  
 INTO popularity_by_budget
 FROM new_movie_table ;
+
+
+SELECT * FROM oscars
