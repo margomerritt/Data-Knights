@@ -2,6 +2,9 @@
 
 ## Overview
 
+![screenshot_2023-03-08_at_8 32 56_pm_480](https://user-images.githubusercontent.com/111299372/223892892-fcc68062-787e-44be-9ba9-152674314a4d.png)
+
+
 ### Purpose
 Project uses movie production data to predict whether a new movie is likely to win an Oscar. Two relevant data sets are joined to create our table, then pre-process the data for supervised machine learning. Findings will be presented in a dashboard in Tableau and an interactive website using javascript.
 
