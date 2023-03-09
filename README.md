@@ -1,4 +1,4 @@
-# Data-Knights
+# The Oscar Awards: An analysis on movie production and how it relates to Oscar winners.
 
 ## Overview
 
