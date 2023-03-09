@@ -1,0 +1,22 @@
+SELECT * FROM new_movie_table
+
+ALTER TABLE "new_movie_table"
+DROP COLUMN "Unnamed: 0"
+
+SELECT * FROM new_movie_table
+
+ALTER TABLE "new_movie_table"
+DROP COLUMN "index"
+
+SELECT 
+	new_movie_table.id, popularity, budget, revenue, budget_adj,
+revenue_adj, profit, popularity_level  
+INTO popularity_by_budget
+FROM new_movie_table ;
+
+
+SELECT * FROM oscars
+
+SELECT film, winner, oscars.name
+FROM oscars
+WHERE winner = true
