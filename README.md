@@ -80,7 +80,7 @@ Screenshot of "The Oscar Award, 1927 - 2023" data:
 
 ## Analysis
 
-The TMBD dataset was loaded into Jupyter notebook for a data analysis and exploration. The data was then drilled down to specific subsets. From there several graphs and visualizations were made to analyze the dataset by popularity. There are four popularity choices: high, moderately high, medium, and low.
+The TMBD dataset was loaded into Jupyter notebook for a data analysis and exploration. The data was then drilled down to specific subsets. From there several graphs and visualizations were made to analyze the dataset by popularity. There are four popularity choices: high, moderately high, medium, and low. Bar charts were made to visualize the popularity of a movie by its average vote, budget,revenue, and profit.
 
 ### Popularity by average vote:
 
