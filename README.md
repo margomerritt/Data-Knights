@@ -102,6 +102,9 @@ The TMBD dataset was loaded into Jupyter notebook for a data analysis and explor
 
 ### The Oscar Award Analysis
 
+The Oscar Awards dataset was imported into Jupyter Notebook for inspection and analysis. The dataset was checked for null values. Three columns of data had null values: name, film, and winner. The null values were dropped and their removal was verified before proceeding with the analysis. The data was checked for duplicated rows. The six duplicated rows were dropped and their removal was verified.
+
+
 ### Breakdown of Acting Categories
 
 ![number_acting](https://user-images.githubusercontent.com/111299372/224421973-db1f763c-03b1-459e-a090-b2723a5cd803.png)
