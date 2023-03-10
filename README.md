@@ -80,21 +80,23 @@ Screenshot of "The Oscar Award, 1927 - 2023" data:
 
 ## Analysis
 
+### The Movie Database Analysis
+
 The TMBD dataset was loaded into Jupyter notebook for a data analysis and exploration. The data was then drilled down to specific subsets. From there several graphs and visualizations were made to analyze the dataset by popularity. There are four popularity choices: high, moderately high, medium, and low. Bar charts were made to visualize the popularity of a movie by its average vote, budget,revenue, and profit.
 
-### Popularity by average vote:
+#### Popularity by average vote:
 
 ![vot_avg](https://user-images.githubusercontent.com/111299372/223892434-68afbc30-88df-4ea7-8828-1a461bbef8a2.png)
 
-### Popularity by average budget:
+#### Popularity by average budget:
 
 ![average_budget](https://user-images.githubusercontent.com/111299372/223892433-ccdba72e-a9af-4baa-987e-373ffafe2c9c.png)
 
-### Popularity by average revenue:
+#### Popularity by average revenue:
 
 ![average_revenue](https://user-images.githubusercontent.com/111299372/223892439-dab86c90-bc0a-4788-a010-c4e1a902ce04.png)
 
-### Popularity by average profit:
+#### Popularity by average profit:
 
 ![average_profit](https://user-images.githubusercontent.com/111299372/223892455-9a05c827-3294-4c58-9fcc-c1f9537cee91.png)
 
