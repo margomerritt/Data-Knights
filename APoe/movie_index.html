@@ -38,8 +38,17 @@
               </div>
             </div>
           </div>
-    
-          <!-- Filter -->
+
+          <!-- PAGE TABS -->
+          <button class="tablink" onclick="openPage('winners', this, 'red')"id="defaultOpen">Winners</button>
+          <button class="tablink" onclick="openPage('money', this, 'green')" >$Money$</button>
+          <button class="tablink" onclick="openPage('visualize', this, 'blue')">Visualize</button>
+          <button class="tablink" onclick="openPage('results', this, 'orange')">Results</button>
+
+          <div id="winners" class="tabcontent">
+            <h3>Winners</h3>
+            <p>Go Ahead, search the dataset to see if your favorite movie has won an Oscar Award.
+              <!-- Filter -->
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-3">
@@ -50,29 +59,22 @@
                         <label for="Movie Title">Enter a Movie</label>
                         <input type="text" placeholder="Forrest Gump" id="title" class="filters"/>
                       </li>
+                      <li class="list-group-item bg-info">
+                        <label for="Name">Enter a Name</label>
+                        <input type="text" placeholder="Tom Hanks" id="name" class="filters"/>
+                      </li>
                     <li class="list-group-item bg-info">
-                      <label for="datetime">Enter Date</label>
-                      <input type="text" placeholder="1/10/2010" id="datetime" class="filters"/>
+                      <label for="datetime">Enter Year Released</label>
+                      <input type="text" placeholder="2010" id="datetime" class="filters"/>
                     </li>
                     <!--remove li element that created button-->
                     <!-- Create a new list for each City, State, Country, and Shape-->
-                    <li class="list-group-item bg-info">
-                      <label for="City">Enter a City</label>
-                      <input type="text" placeholder="city name" id="city" class="filters"/>
-                    </li>
-                    <li class="list-group-item bg-info">
-                      <label for="State">Enter a State</label>
-                      <input type="text" placeholder="co" id="state" class="filters"/>
-                    </li>
                     
-                    <li class="list-group-item bg-info">
-                      <label for="Shape">Enter a Shape</label>
-                      <input type="text" placeholder="square" id="shape" class="filters"/>
-                    </li>
+                    
                   </ul>
                 </form>
               </div>
-    
+
               <!-- Table -->
 
               <!--<div class="col-md-9">
@@ -94,9 +96,31 @@
             </div>
           </div>
         </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
-        <script src="static/js/data.js"></script>
-        <script src="static/js/ufo_app_challenge.js"></script> --> 
+          </div> -->
+
+          <div id="money" class="tabcontent">
+            <h3>Money</h3>
+            <p>Show Me the Money!</p>
+          </div>
+
+          <div id="visualize" class="tabcontent">
+            <h3>Visualization</h3>
+            <p>This are some fun graphs we made with our results.</p>
+          </div>
+
+          <div id="results" class="tabcontent">
+            <h3>Our Findings</h3>
+            <p>This are some fun graphs we made with our results.</p>
+          </div>
+
+          
+    
+          
+    
+              
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+        <script src="static/js/data.js"></script> -->
+        <script src="static/js/movie.js"></script> 
       </body>
     </html>
     
