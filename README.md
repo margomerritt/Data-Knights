@@ -100,6 +100,15 @@ The TMBD dataset was loaded into Jupyter notebook for a data analysis and explor
 
 ![average_profit](https://user-images.githubusercontent.com/111299372/223892455-9a05c827-3294-4c58-9fcc-c1f9537cee91.png)
 
+### The Oscar Award Analysis
+
+### Breakdown of Acting Categories
+
+![number_acting](https://user-images.githubusercontent.com/111299372/224421973-db1f763c-03b1-459e-a090-b2723a5cd803.png)
+
+#### Breakdown of Winning vs. Losing Nominations
+
+![win_vs_lose](https://user-images.githubusercontent.com/111299372/224422042-9e71ef06-5da7-4eca-affd-f513cd975dc0.png)
 
 
 ## Progress Notes
