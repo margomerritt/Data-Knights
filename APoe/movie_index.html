@@ -14,36 +14,68 @@
     <link rel="stylesheet" href="static/css/movie_style.css" />
 </head>
 <body>
-    <body class="bg-info">
+    <body class="text-white bg-dark">
         <div class="wrapper">
           <!-- Navbar -->
-          <nav class="navbar navbar-info bg-info navbar-expand-lg">
+          <nav class="navbar navbar-info bg-gray navbar-expand-lg">
             <a class="navbar-brand" href="index.html">Winning Movies</a>
           </nav>
           <!-- Jumbotron -->
           <div class="jumbotron">
-            <h1 class="display-4">Who will WIN in the Oscars?</h1>
+            <h1 class="display-4">Who will WIN an Oscar Award?</h1>
           </div>
     
           <!-- Article title and paragraph -->
           <div class="container-fluid">
             <div class="row">
-              <div class="col-md-4 article-title">
+              <div class="col-md-3 article-title">
                 <h3>Winning Movies: What makes an Oscar? <small>More than 1000 movies give insights</small></h3>
               </div>
               <div class="col-md-8 article-p">
                 <p>
-                  Write a paragraph here explaining what we are doing. 
+                  Is it the buget, the director, or the actors? What other vairables are involved with creating an oscar winning film? In the journy to answering these questions we (The Data Knights) found a two different data sets from Kaggle.com one of which contained movie information for over 1,000 movies, the other dataset had Oscar winning information. We merged these dataset, processed, split and trained a Machine Learning model to first find which variables were most importaint, and second be able to predict if a combination of Director, Actor and Budget would produce a Winning Oscar Award (or maybe a nomination). We also thought it would be fun if you could search for your favorite movie in the Winners tab. The Money tab tells the story through budget and profit. With so many questions we answered a few of them in our Visualize tab. You can find our summary in the Results tab.  
                 </p>
               </div>
             </div>
           </div>
 
           <!-- PAGE TABS -->
+          <button class="tablink" onclick="openPage('predict', this, 'purple')"id="defaultOpen">Prediction</button>
           <button class="tablink" onclick="openPage('winners', this, 'red')"id="defaultOpen">Winners</button>
           <button class="tablink" onclick="openPage('money', this, 'green')" >$Money$</button>
           <button class="tablink" onclick="openPage('visualize', this, 'blue')">Visualize</button>
           <button class="tablink" onclick="openPage('results', this, 'orange')">Results</button>
+
+          <div id="predict" class="tabcontent">
+            <h3>Predict</h3>
+            <h4>Can we predict a future Oscar winner? </h4>
+            <p>Taking into acount the director, actors, and budget can we predict a future Oscar winner?
+              Can you find an Oscar Winning combination? Fill in the blanks to find out.  </p>
+                <!-- User Input for prediction ML model-->
+          <div class="container-fluid">
+            <div class="row">
+              
+                <form class="bg-purple">
+                <h3>Enter Information</h3>
+                
+                    <label for="Director">Enter a Director</label>
+                    <input type="text" placeholder="Steven Spielberg" id="title" class="filters">
+                 
+                
+                    <label for="Actor">Enter an Actor</label>
+                    <input type="text" placeholder="Tom Hanks" id="name" class="filters"/>
+                  
+                  
+                    <label for="Budget">Enter a US Dollar Amount (In Millions)</label>
+                    <input type="number" placeholder="5,000,000" id="budget" class="filters"/><br>
+                
+                    <input type="submit" value="Submit">
+                </form>
+               
+            </div>
+          </div>
+          </div>
+       
 
           <div id="winners" class="tabcontent">
             <h3>Winners</h3>
@@ -64,8 +96,8 @@
                         <input type="text" placeholder="Tom Hanks" id="name" class="filters"/>
                       </li>
                     <li class="list-group-item bg-info">
-                      <label for="datetime">Enter Year Released</label>
-                      <input type="text" placeholder="2010" id="datetime" class="filters"/>
+                      <label for="date">Enter Year Released</label>
+                      <input type="text" placeholder="2010" id="date" class="filters"/>
                     </li>
                     <!--remove li element that created button-->
                     <!-- Create a new list for each City, State, Country, and Shape-->
@@ -101,6 +133,15 @@
           <div id="money" class="tabcontent">
             <h3>Money</h3>
             <p>Show Me the Money!</p>
+            <div class="container-fluid">
+              <div class="row bg-green">
+                <div class="col bg-green">
+                  
+                </div>
+                
+                 
+              </div>
+            </div>
           </div>
 
           <div id="visualize" class="tabcontent">
