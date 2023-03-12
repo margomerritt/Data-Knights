@@ -92,6 +92,10 @@ This website will contain several interactive features:
 * Machine Learning is used to predict if a movie will win a future Oscar Award. Users will be able to enter a director name, an actor name, and a budget. The machine learning model will be used to predict if the entered combination of movie production will win an Oscar Award.
 
 
+<img width="1259" alt="Prediction page" src="https://user-images.githubusercontent.com/111299372/224562912-64ab3f7b-d8fd-49d1-a820-967f04a8fe62.png">
+
+
+
 ## Analysis
 
 ### The Movie Database Analysis
