@@ -87,6 +87,10 @@ The website will have five different tabs:
 * Visualize
 * Results
 
+This website will contain several interactive features:
+* Users will be able to search the dataset to see if a particular movie has won an Oscar Award. Users can search by filtering by movie name, actor/actress name, and year released.
+* Machine Learning is used to predict if a movie will win a future Oscar Award. Users will be able to enter a director name, an actor name, and a budget. The machine learning model will be used to predict if the entered combination of movie production will win an Oscar Award.
+
 
 ## Analysis
 
