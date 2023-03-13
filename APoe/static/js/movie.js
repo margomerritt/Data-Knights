@@ -1,3 +1,4 @@
+//Tabs//
 function openPage(pageName, elmnt, color) {
     // Hide all elements with class="tabcontent" by default */
     var i, tabcontent, tablinks;
@@ -6,7 +7,7 @@ function openPage(pageName, elmnt, color) {
       tabcontent[i].style.display = "none";
     }
   
-    // Remove the background color of all tablinks/buttons
+    // Remove the background color of all other tablinks/buttons
     tablinks = document.getElementsByClassName("tablink");
     for (i = 0; i < tablinks.length; i++) {
       tablinks[i].style.backgroundColor = "";
@@ -22,7 +23,9 @@ function openPage(pageName, elmnt, color) {
   // Get the element with id="defaultOpen" and click on it
   document.getElementById("defaultOpen").click();
   
+ 
   
+  // Create table for Winners Tab// 
 // from data.js
 const tableData = data;
 

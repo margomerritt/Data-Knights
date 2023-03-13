@@ -29,11 +29,18 @@
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-3 article-title">
-                <h3>Winning Movies: What makes an Oscar? <small>More than 1000 movies give insights</small></h3>
+                <h2>Winning Movies:<br> What makes an Oscar? <small>More than 1000 movies give insights</small></h2>
               </div>
               <div class="col-md-8 article-p">
                 <p>
-                  Is it the buget, the director, or the actors? What other vairables are involved with creating an oscar winning film? In the journy to answering these questions we (The Data Knights) found a two different data sets from Kaggle.com one of which contained movie information for over 1,000 movies, the other dataset had Oscar winning information. We merged these dataset, processed, split and trained a Machine Learning model to first find which variables were most importaint, and second be able to predict if a combination of Director, Actor and Budget would produce a Winning Oscar Award (or maybe a nomination). We also thought it would be fun if you could search for your favorite movie in the Winners tab. The Money tab tells the story through budget and profit. With so many questions we answered a few of them in our Visualize tab. You can find our summary in the Results tab.  
+                  Is it the buget, the director, or the actors? What other vairables are involved with creating an oscar winning film?
+                   In the journy to answering these questions we (The Data Knights) found two different data sets from Kaggle.com.
+                    One of which contained movie information for over 1,000 movies, the other dataset had Oscar winning information.
+                     We merged these dataset, processed, split and trained a Machine Learning model to first find which variables were most importaint,
+                      and second be able to predict if a combination of Director, Actor and Budget would produce a Winning Oscar Award (or maybe a nomination).
+                       We also thought it would be fun if you could search for your favorite movie in the Winners tab. 
+                       The Money tab tells the story through budget and profit. With so many questions we answered a few of them in our Visualize tab.
+                        You can find our summary in the Results tab.  
                 </p>
               </div>
             </div>
@@ -41,8 +48,8 @@
 
           <!-- PAGE TABS -->
           <button class="tablink" onclick="openPage('predict', this, 'purple')"id="defaultOpen">Prediction</button>
-          <button class="tablink" onclick="openPage('winners', this, 'red')"id="defaultOpen">Winners</button>
-          <button class="tablink" onclick="openPage('money', this, 'green')" >$Money$</button>
+          <button class="tablink" onclick="openPage('winners', this, 'red')">Winners</button>
+          <button class="tablink" onclick="openPage('money', this, 'green')">$Money$</button>
           <button class="tablink" onclick="openPage('visualize', this, 'blue')">Visualize</button>
           <button class="tablink" onclick="openPage('results', this, 'orange')">Results</button>
 
@@ -87,16 +94,16 @@
                 <form class="bg-info">
                   <p>Filter Search</p>
                   <ul class="list-group">
-                    <li class="list-group-item bg-info">
-                        <label for="Movie Title">Enter a Movie</label>
+                    <li class="list-group-item bg-dark">
+                        <label for="Movie Title">Enter a Movie</label><br>
                         <input type="text" placeholder="Forrest Gump" id="title" class="filters"/>
                       </li>
-                      <li class="list-group-item bg-info">
-                        <label for="Name">Enter a Name</label>
+                      <li class="list-group-item bg-dark">
+                        <label for="Name">Enter a Name</label><br>
                         <input type="text" placeholder="Tom Hanks" id="name" class="filters"/>
                       </li>
-                    <li class="list-group-item bg-info">
-                      <label for="date">Enter Year Released</label>
+                    <li class="list-group-item bg-dark">
+                      <label for="date">Enter Year Released</label><br>
                       <input type="text" placeholder="2010" id="date" class="filters"/>
                     </li>
                     <!--remove li element that created button-->
@@ -106,6 +113,63 @@
                   </ul>
                 </form>
               </div>
+            </div>
+          </div>
+        </div>
+
+
+          <div id="money" class="tabcontent">
+            <h3>Money</h3>
+            <p>Show Me the Money!</p>
+            <div class="container-fluid">
+              <div class="row bg-green">
+                <div class="col bg-green">
+                  
+                </div>
+                
+                 
+              </div>
+            </div>
+          </div>
+
+          <div id="visualize" class="tabcontent">
+            <h3>Visualization</h3>
+            <p>This are some fun graphs we made with our results.</p>
+            
+            <div class="container-fluid">
+              <div class="row">
+                
+                  <form>
+                  <h3>Graphs</h3>
+
+                    <img class="img-fluid" src="average_budget.png" alt="Average Movie Budget">
+
+                  </form>
+                </div>
+              </div>
+          </div>
+
+          <div id="results" class="tabcontent">
+            <h3>Our Findings</h3>
+            <p>This are some fun graphs we made with our results.</p>
+          </div>
+
+          
+    
+          
+    
+              
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+        <script src="static/js/data.js"></script> -->
+        <script src="static/js/movie.js"></script> 
+      </body>
+    </html>
+    
+    
+</body>
+</html>
+
+
 
               <!-- Table -->
 
@@ -129,42 +193,3 @@
           </div>
         </div>
           </div> -->
-
-          <div id="money" class="tabcontent">
-            <h3>Money</h3>
-            <p>Show Me the Money!</p>
-            <div class="container-fluid">
-              <div class="row bg-green">
-                <div class="col bg-green">
-                  
-                </div>
-                
-                 
-              </div>
-            </div>
-          </div>
-
-          <div id="visualize" class="tabcontent">
-            <h3>Visualization</h3>
-            <p>This are some fun graphs we made with our results.</p>
-          </div>
-
-          <div id="results" class="tabcontent">
-            <h3>Our Findings</h3>
-            <p>This are some fun graphs we made with our results.</p>
-          </div>
-
-          
-    
-          
-    
-              
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
-        <script src="static/js/data.js"></script> -->
-        <script src="static/js/movie.js"></script> 
-      </body>
-    </html>
-    
-    
-</body>
-</html>
