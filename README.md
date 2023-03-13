@@ -37,7 +37,7 @@ A group chat was formed on Slack. Slack is the primary form of communication for
 
 Machine Learning Model: A write up on our machine learning model is located in the progess notes from March 5, 2023. A mockup of the machine learning model has been written. The files are titled "Neural_Network.ipynb" and "Random_Forest.ipynb". They are were pushed to the KAV_branch and have been merged with the main branch. 
 
-Database:
+### Database:
 
 The data was imported into a Jupyter notebook. The data was then imported to SQL using Pandas. The database files and analysis are currently located on the JAK_branch. This branch also has the SQL queries saved to it and additional screenshots of the SQL tables in pgAdmin. 
 
