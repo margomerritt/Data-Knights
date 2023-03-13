@@ -9,11 +9,11 @@ An analysis on movie production and how it relates to Oscar winners.
 
 
 ### Purpose
-Project uses movie production data to predict whether a new movie is likely to win an Oscar. Two relevant data sets are joined to create our table, then pre-process the data for supervised machine learning. Findings will be presented in a dashboard in Tableau and an interactive website using javascript.
+Project uses movie production data to predict whether a new movie is likely to win an Oscar. Two relevant data sets are joined to create our table, then pre-process the data for supervised machine learning. Findings will be presented in an interactive website using javascript.
 
 ### Content Outline
 
-Topic: Movie Productions and Oscar Awards
+Topic: Movie Production and Oscar Awards
 
 Question to answer: To predict whether or not a new movie will win an Oscar. 
 
