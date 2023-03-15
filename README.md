@@ -2,9 +2,9 @@
 
 ## Overview
 
-### Purpose
-
 ![screenshot_2023-03-08_at_8 32 56_pm_480](https://user-images.githubusercontent.com/111299372/223892892-fcc68062-787e-44be-9ba9-152674314a4d.png)
+
+### Purpose
 
 An analysis on movie production and how it relates to Oscar winners. The production of a movie involves a lot of variables such as budget, cast, director, genre, and runtime. All of these variables directly relate to the popularity of a movie as well its gross profit. Analyzing a dataset related to movie production will help to explore the process of how Oscar winners are picked.
 
