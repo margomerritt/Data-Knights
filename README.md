@@ -42,6 +42,8 @@ Machine Learning Model: A write up on our machine learning model is located in t
 
 The data was imported into a Jupyter notebook. The data was then imported to SQL using Pandas. The database files and analysis are currently located on the JAK_branch. This branch also has the SQL queries saved to it and additional screenshots of the SQL tables in pgAdmin. 
 
+![Screenshot 2023-03-15 at 7 21 01 PM](https://user-images.githubusercontent.com/111299372/225466661-b262012b-0493-4340-bf60-638a8aefc2f1.png)
+
 <img width="869" alt="Screenshot 2023-03-06 at 9 13 00 PM" src="https://user-images.githubusercontent.com/114188120/223302687-a4dc14eb-a6fe-48e1-a1f8-6216e5a6cd19.png">
 
 
