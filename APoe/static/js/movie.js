@@ -26,19 +26,19 @@ function openPage(pageName, elmnt, color) {
  
   
   // Create table for Winners Tab// 
-// from data.js
-const tableData = data;
+// from ap_oscar_movie.csv
+const tableData = ap_oscar_movie_js;
 
 // get table references
 var tbody = d3.select("tbody");
 
-function buildTable(data) {
+function buildTable(ap_oscar_movie_js) {
   // First, clear out any existing data
   tbody.html("");
 
   // Next, loop through each object in the data
   // and append a row and cells for each value in the row
-  data.forEach((dataRow) => {
+  ap_oscar_movie_js.forEach((dataRow) => {
     // Append a row to the table body
     let row = tbody.append("tr");
 

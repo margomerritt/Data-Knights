@@ -51,7 +51,6 @@
           <button class="tablink" onclick="openPage('winners', this, 'red')">Winners</button>
           <button class="tablink" onclick="openPage('money', this, 'green')">$Money$</button>
           <button class="tablink" onclick="openPage('visualize', this, 'blue')">Visualize</button>
-          <button class="tablink" onclick="openPage('results', this, 'orange')">Results</button>
 
           <div id="predict" class="tabcontent">
             <h3>Predict</h3>
@@ -86,7 +85,7 @@
 
           <div id="winners" class="tabcontent">
             <h3>Winners</h3>
-            <p>Go Ahead, search the dataset to see if your favorite movie has won an Oscar Award.
+            <p>Go Ahead, search the dataset to see if your favorite movie has won an Oscar Award.</p>
               <!-- Filter -->
           <div class="container-fluid">
             <div class="row">
@@ -106,12 +105,33 @@
                       <label for="date">Enter Year Released</label><br>
                       <input type="text" placeholder="2010" id="date" class="filters"/>
                     </li>
+                  </ul>
+                </form>
+              </div>
                     <!--remove li element that created button-->
                     <!-- Create a new list for each City, State, Country, and Shape-->
                     
-                    
-                  </ul>
-                </form>
+            <!-- Table -->
+            
+              <div class="col-md-9">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Title</th>
+                      <th>Cast</th>
+                      <th>Director</th>
+                      <th>Headline</th>
+                      <th>Runtime (Min)</th>
+                      <th>Genres</th>
+                      <th>Production Company</th>
+                      <th>Release Date</th>
+                      <th>Category</th>
+                      <th>Name</th>
+                      <th>Winner</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
               </div>
             </div>
           </div>
@@ -124,34 +144,79 @@
             <div class="container-fluid">
               <div class="row bg-green">
                 <div class="col bg-green">
-                  
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <form class="bg-info">
+                          <p>Filter Search</p>
+                          <ul class="list-group">
+                            <li class="list-group-item bg-dark">
+                                <label for="Movie Title">Enter a Movie</label><br>
+                                <input type="text" placeholder="Forrest Gump" id="title" class="filters"/>
+                              </li>
+                            </ul>
+                          </form>
+                      </div>
+                    <!-- Table -->
+
+                      <div class="col-md-9">
+                        <table class="table table-striped">
+                          <thead>
+                            <tr>
+                              <th>Title</th>
+                              <th>Headline</th>
+                              <th>Adjusted Budget</th>
+                              <th>Adjusted Revenue</th>
+                              <th>Profit (Loss)</th>
+                              <th>Production Company</th>
+                              <th>Genres</th>
+                              <th>Category</th>
+                              <th>Lenght (Min)</th>
+                              <th>Release Date</th>
+                              <th>Name</th>
+                              <th>Winner></th>
+                            </tr>
+                          </thead>
+                          <tbody></tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                
-                 
-              </div>
+              </div>      
             </div>
           </div>
+        
 
           <div id="visualize" class="tabcontent">
             <h3>Visualization</h3>
-            <p>This are some fun graphs we made with our results.</p>
+              <p>This are some fun graphs we made with our results.</p>
+                <h3>Graphs</h3>
             
-            <div class="container-fluid">
               <div class="row">
-                
-                  <form>
-                  <h3>Graphs</h3>
-
-                    <img class="img-fluid" src="average_budget.png" alt="Average Movie Budget">
-
-                  </form>
+                <div class="column">
+                  <a href="average_budget_web.png">
+                    <img class="img" src="./static/images/average_budget_web.png" alt="Average Movie Budget">
+                  </a>
                 </div>
-              </div>
-          </div>
 
-          <div id="results" class="tabcontent">
-            <h3>Our Findings</h3>
-            <p>This are some fun graphs we made with our results.</p>
+                <div class="column">
+                  <img class="img" src="./static/images/average_profit_web.png" alt="Average Movie Profit">
+                </div>
+
+                <div class="column">
+                  <img class="img" src="./static/images/average_revenue_web.png" alt="Average Movie Revenue">
+                </div>
+
+                <div class="column">
+                  <img class="img" src="./static/images/number_acting_web.png" alt="Number Acting">
+                </div>
+
+                <div class="column">
+                  <img class="img" src="./static/images/vot_avg_web.png" alt="Average Votes">
+                </div>
+
+              </div>
           </div>
 
           
@@ -159,8 +224,9 @@
           
     
               
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
-        <script src="static/js/data.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+        <script src="ap_data/ap_oscar_movie.csv"></script>
+        <script src="ap_data/ap_movie_money.csv"></script>
         <script src="static/js/movie.js"></script> 
       </body>
     </html>
@@ -170,26 +236,3 @@
 </html>
 
 
-
-              <!-- Table -->
-
-              <!--<div class="col-md-9">
-                <table class="table table-striped">
-                  <thead>
-                    <tr>
-                      <th>Date</th>
-                      <th>City</th>
-                      <th>State</th>
-                      <th>Country</th>
-                      <th>Shape</th>
-                      <th>Duration</th>
-                      <th>Comments</th>
-                    </tr>
-                  </thead>
-                  <tbody></tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-          </div> -->

@@ -23,7 +23,7 @@ body, html {
     cursor: pointer;
     padding: 14px 16px;
     font-size: 17px;
-    width: 20%;
+    width: 25%;
   }
   
   .tablink:hover {
@@ -38,9 +38,24 @@ body, html {
     height: 100%;
   }
   
-  #predict {background-color: purple}
-  #winners {background-color: red;}
-  #money {background-color: green;}
-  #visualize{background-color: blue;}
-  #results {background-color: orange;}
+  #predict {background-color: rgb(168, 30, 168)}
+  #winners {background-color: rgb(166, 45, 45);}
+  #money {background-color: rgb(55, 207, 55);}
+  #visualize{background-color: rgb(8, 101, 249);}
   
+  
+  img {
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 15px;
+    width: 600px; 
+    height: 500px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    justify-content: space-evenly;
+    display: flex;
+  }
+
+  img:hover {
+    box-shadow: 0 0 12px 12px rgba(6, 243, 140, 0.5);
+  }
