@@ -12,23 +12,6 @@ The Oscars are awards for artistic and technical merit for the American Film Ind
 
 Project uses movie production data to predict whether a new movie is likely to win an Oscar. Two relevant data sets are joined to create our table. Then the data will be pre-processed for supervised machine learning. Findings will be presented in an interactive website using javascript.
 
-### Content Outline
-
-Topic: Movie Production and Oscar Awards
-
-Question to answer: To predict whether or not a new movie will win an Oscar. 
-
-Dataset links:
-https://www.kaggle.com/datasets/successikuku/tmbd-movie-dataset
-
-https://www.kaggle.com/datasets/unanimad/the-oscar-award
-
-Database: Tables created in pgAdmin from the two datasets. 
-
-Machine Learning Model: Supervised Machine Learning
-
-Technologies to use: Jupyter notebooks, Python, Pandas, SQL, pgAdmin, Machine Learning 
-
 ### Communication protocols
 A group chat was formed on Slack. Slack is the primary form of communication for this project. We have one stand-in zoom scheduled per week in addition to the two regularly scheduled class times. Additional zoom meetings will be scheduled as needed throughout the course of this project.
 
