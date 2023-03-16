@@ -15,6 +15,12 @@ Project uses movie production data to predict whether a new movie is likely to w
 ### Communication protocols
 A group chat was formed on Slack. Slack is the primary form of communication for this project. We have one stand-in zoom scheduled per week in addition to the two regularly scheduled class times. Additional zoom meetings will be scheduled as needed throughout the course of this project.
 
+### Link to Google Slide Deck
+https://docs.google.com/presentation/d/1PBKEbv_1AAcUWEmc93uS9961zodiyv0a-1vvWwRyaM0/edit#slide=id.gd1b6111b2f_0_12
+
+### Link to interactive dashboard
+
+
 ## Resources
 
 ### Software
