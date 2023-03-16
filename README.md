@@ -25,9 +25,7 @@ A group chat was formed on Slack. Slack is the primary form of communication for
 
 ### Data Source
 
-First dataset:
-
-Dataset is titled "TMBD Movie Dataset". Data was found from https://www.kaggle.com/datasets/successikuku/tmbd-movie-dataset. Dataset contains 1286 rows and has 24 columns. 
+The first dataset is titled "TMBD Movie Dataset". Data was found from https://www.kaggle.com/datasets/successikuku/tmbd-movie-dataset. Dataset contains 1286 rows and has 24 columns. 
 
 Screenshot of the "TMBD Movie Dataset":
 
@@ -35,8 +33,6 @@ Screenshot of the "TMBD Movie Dataset":
 
 ![Screen Shot 2023-03-04 at 4 24 57 PM](https://user-images.githubusercontent.com/111299372/223214872-f0e07932-db64-4eda-becb-beb0e3913835.png)
 
-
-Second dataset:
 
 The second datasoure is titled "The Oscar Award, 1927 - 2023" and was found at https://www.kaggle.com/datasets/unanimad/the-oscar-award. This file is scraped from the Academy Awards Database which contains the record of past Academy Award winners and nominees between 1927 and 2023.
 
