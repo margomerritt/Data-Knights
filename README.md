@@ -108,6 +108,15 @@ The Oscar Awards dataset was imported into Jupyter Notebook for inspection and a
 ![win_vs_lose](https://user-images.githubusercontent.com/111299372/224422042-9e71ef06-5da7-4eca-affd-f513cd975dc0.png)
 
 
+
+
+## Results
+
+
+
+
+
+
 ## Progress Notes
 
 ### March 2, 2023
