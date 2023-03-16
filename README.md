@@ -117,7 +117,9 @@ The Oscar Awards dataset was imported into Jupyter Notebook for inspection and a
 
 ## Results
 
+The two datasets were merged in SQL to form the "all_movie_data" dataset. The all_movie_dataset was imported into Jupyter Notebook for analysis. The data was drilled down into subsets and used to create a barchart displaying the Oscar winners by popularity level of the film.
 
+![winner_by_pop](https://user-images.githubusercontent.com/111299372/225704411-7e5856e5-7f1f-4eb1-ac77-ff93962a76f0.png)
 
 
 
