@@ -22,7 +22,7 @@
           </nav>
           <!-- Jumbotron -->
           <div class="jumbotron">
-            <h1 class="display-4">Who will WIN an Oscar Award?</h1>
+            <h1 class="display-4">Who WINS an Oscar Award?</h1>
           </div>
     
           <!-- Article title and paragraph -->
@@ -47,18 +47,18 @@
           </div>
 
           <!-- PAGE TABS -->
-          <button class="tablink" onclick="openPage('predict', this, 'purple')"id="defaultOpen">Prediction</button>
-          <button class="tablink" onclick="openPage('winners', this, 'red')">Winners</button>
+          <!--<button class="tablink" onclick="openPage('predict', this, 'purple')"id="defaultOpen">Prediction</button>-->
+          <button class="tablink" onclick="openPage('winners', this, 'red')"id="defaultOpen">Winners</button>
           <button class="tablink" onclick="openPage('money', this, 'green')">$Money$</button>
           <button class="tablink" onclick="openPage('visualize', this, 'blue')">Visualize</button>
 
-          <div id="predict" class="tabcontent">
+          <!--<div id="predict" class="tabcontent">
             <h3>Predict</h3>
             <h4>Can we predict a future Oscar winner? </h4>
             <p>Taking into acount the director, actors, and budget can we predict a future Oscar winner?
-              Can you find an Oscar Winning combination? Fill in the blanks to find out.  </p>
+              Can you find an Oscar Winning combination? Fill in the blanks to find out.  </p>-->
                 <!-- User Input for prediction ML model-->
-          <div class="container-fluid">
+          <!--<div class="container-fluid">
             <div class="row">
               
                 <form class="bg-purple">
@@ -80,7 +80,7 @@
                
             </div>
           </div>
-          </div>
+          </div>-->
        
 
           <div id="winners" class="tabcontent">
@@ -109,7 +109,7 @@
                 </form>
               </div>
                     <!--remove li element that created button-->
-                    <!-- Create a new list for each City, State, Country, and Shape-->
+                    
                     
             <!-- Table -->
             
@@ -130,7 +130,9 @@
                       <th>Winner</th>
                     </tr>
                   </thead>
-                  <tbody></tbody>
+                  <tbody>
+
+                  </tbody>
                 </table>
               </div>
             </div>
@@ -171,13 +173,16 @@
                               <th>Production Company</th>
                               <th>Genres</th>
                               <th>Category</th>
-                              <th>Lenght (Min)</th>
+                              <th>Runtime (Min)</th>
                               <th>Release Date</th>
                               <th>Name</th>
                               <th>Winner></th>
                             </tr>
                           </thead>
-                          <tbody></tbody>
+                          <tbody>
+
+
+                          </tbody>
                         </table>
                       </div>
                     </div>
@@ -225,8 +230,8 @@
     
               
         <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
-        <script src="ap_data/ap_oscar_movie.csv"></script>
-        <script src="ap_data/ap_movie_money.csv"></script>
+        <script src="static/js/ap_oscar_data.js"></script>
+        <script src="static/js/ap_money_data.js"></script>
         <script src="static/js/movie.js"></script> 
       </body>
     </html>
