@@ -15,13 +15,13 @@ Project uses movie production data to predict whether a new movie is likely to w
 ### Communication protocols
 A group chat was formed on Slack. Slack is the primary form of communication for this project. We have one stand-in zoom scheduled per week in addition to the two regularly scheduled class times. Additional zoom meetings will be scheduled as needed throughout the course of this project.
 
-## Segment 1
+## Project Outline
 
-### Content for Segment 1
+### Machine Learning Model
 
 Machine Learning Model: A write up on our machine learning model is located in the progess notes from March 5, 2023. A mockup of the machine learning model has been written. The files are titled "Neural_Network.ipynb" and "Random_Forest.ipynb". They are were pushed to the KAV_branch and have been merged with the main branch. 
 
-### Database:
+### Database
 
 The data was imported into a Jupyter notebook. The data was then imported to SQL using Pandas. The database files and analysis are currently located on the JAK_branch. This branch also has the SQL queries saved to it and additional screenshots of the SQL tables in pgAdmin. 
 
@@ -35,17 +35,8 @@ The data was imported into a Jupyter notebook. The data was then imported to SQL
 <img width="749" alt="Screenshot 2023-03-06 at 8 12 06 PM" src="https://user-images.githubusercontent.com/114188120/223302321-0be30e64-9439-4564-bd9b-4acdafd25a24.png">
 
 
-### Presentation for Segment 1
+### First datasource
 
-Topic: Movie Productions and Oscar Awards
-
-Reason for topic choice: Topic was chosen to explore the process of how oscar winners were chosen. Analyzing a dataset related to movie production will help to explore the process of how Oscar winners are picked.
-
-Question to answer: Given the data about a new movie can we predict whether or not it will win an oscar? 
-
-Link to slide deck: https://docs.google.com/presentation/d/1PBKEbv_1AAcUWEmc93uS9961zodiyv0a-1vvWwRyaM0/edit#slide=id.g215d28312ee_0_0
-
-### First datasource:
 Dataset is titled "TMBD Movie Dataset". Data was found from https://www.kaggle.com/datasets/successikuku/tmbd-movie-dataset. Dataset contains 1286 rows and has 24 columns. 
 
 Screenshot of the "TMBD Movie Dataset":
@@ -71,7 +62,6 @@ The website will have five different tabs:
 * Winners
 * Money
 * Visualize
-* Results
 
 This website will contain several interactive features:
 * Users will be able to search the dataset to see if a particular movie has won an Oscar Award. Users can search by filtering by movie name, actor/actress name, and year released.
@@ -86,7 +76,7 @@ This website will contain several interactive features:
 
 ### The Movie Database Analysis
 
-The TMBD dataset was loaded into Jupyter notebook for a data analysis and exploration. The data was then drilled down to specific subsets. From there several graphs and visualizations were made to analyze the dataset by popularity. There are four popularity choices: high, moderately high, medium, and low. Bar charts were made to visualize the popularity of a movie by its average vote, budget,revenue, and profit.
+The TMBD dataset was loaded into Jupyter notebook for data analysis and exploration. The data was then drilled down to specific subsets. From there several graphs and visualizations were made to analyze the dataset by popularity. There are four popularity choices: high, moderately high, medium, and low. Bar charts were made to visualize the popularity of a movie by its average vote, budget, revenue, and profit.
 
 #### Average vote by popularity:
 
