@@ -18,6 +18,10 @@ A group chat was formed on Slack. Slack is the primary form of communication for
 ## Resources
 
 ### Software
+* Website Dashboard: HTML, CSS, Javascript
+* Machine Learning: sklearn, tensorflow
+* Python: Jupyter Notebook, Pandas, matplotlib, numpy 
+* Database: SQL, pgAdmin 
 
 ### Data Source
 
