@@ -130,10 +130,9 @@ Number of Oscar Winners by Popularity Level:
 ![winner_by_pop](https://user-images.githubusercontent.com/111299372/225726864-c433032e-b6b4-4fd0-bfe7-03959f04bd93.png)
 
 
-Number of Non-Oscar Winners by Popularity Level:
+Number of Oscar Nominees by Popularity Level:
 
-![non_winner_by_pop](https://user-images.githubusercontent.com/111299372/225726876-33b361d3-8560-4c29-9da4-bc03833938db.png)
-
+![oscar_nominees](https://user-images.githubusercontent.com/111299372/226194996-00d4196f-891f-4eb5-89ac-5584f554abf8.png)
 
 
 ## Progress Notes
