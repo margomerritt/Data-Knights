@@ -12,6 +12,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="static/css/movie_style.css" />
+    <!--<link rel="sorttable" href="./static/js/sorttable.js" />-->
+    <script src="./static/js/sorttable.js"></script>
 </head>
 <body>
     <body class="text-white bg-dark">
@@ -52,7 +54,8 @@
           <button class="tablink" onclick="openPage('money', this, 'green')">$Money$</button>
           <button class="tablink" onclick="openPage('visualize', this, 'blue')">Visualize</button>
 
-          <!--<div id="predict" class="tabcontent">
+          <!--REMOVED this TAB. maybe for future use among the team. too advanced at the moment"
+            <div id="predict" class="tabcontent">
             <h3>Predict</h3>
             <h4>Can we predict a future Oscar winner? </h4>
             <p>Taking into acount the director, actors, and budget can we predict a future Oscar winner?
@@ -90,31 +93,41 @@
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-3">
-                <form class="bg-info">
-                  <p>Filter Search</p>
+                <form class="bg-info"> <!-- method=post onsubmit="return buildTable(filteredData)"-->
+                  <p>Search Filter</p>
                   <ul class="list-group">
+                    
                     <li class="list-group-item bg-dark">
-                        <label for="Movie Title">Enter a Movie</label><br>
-                        <input type="text" placeholder="Forrest Gump" id="title" class="filters"/>
+                        <label for="Movie Title">Enter a Movie Title</label><br>
+                        <!--<input type="text" placeholder="Forrest Gump" id="title" class="filters"/>-->
+                        <input type="text" id="title" name="search" placeholder="Forrest Gump">
+                        <button onclick="  buildTable(filteredData)" type="submit">Search</button>
                       </li>
                       <li class="list-group-item bg-dark">
                         <label for="Name">Enter a Name</label><br>
                         <input type="text" placeholder="Tom Hanks" id="name" class="filters"/>
+                        <button type="submit">Search</button>
                       </li>
                     <li class="list-group-item bg-dark">
                       <label for="date">Enter Year Released</label><br>
                       <input type="text" placeholder="2010" id="date" class="filters"/>
+                      <button type="submit">Search</button>
                     </li>
+
+                    <!--<li class="list-group-item bg-info" >
+                      <button id="filter-btn" type="button" class="btn btn-dark">Filter Table</button>
+                  </li>>-->
+
+                  <!--<input type="search" id="search" name="search" placeholder="Search...">
+                    <button type="submit">Search</button>-->
                   </ul>
                 </form>
               </div>
-                    <!--remove li element that created button-->
-                    
                     
             <!-- Table -->
             
               <div class="col-md-9">
-                <table class="table table-striped">
+                <table class="table table-striped bg-dark">
                   <thead>
                     <tr>
                       <th>Title</th>
@@ -130,10 +143,11 @@
                       <th>Winner</th>
                     </tr>
                   </thead>
-                  <tbody>
-
-                  </tbody>
+                  <tbody id="winner_table"></tbody>
                 </table>
+
+          
+
               </div>
             </div>
           </div>
@@ -149,20 +163,11 @@
                   <div class="container-fluid">
                     <div class="row">
                       <div class="col-md-3">
-                        <form class="bg-info">
-                          <p>Filter Search</p>
-                          <ul class="list-group">
-                            <li class="list-group-item bg-dark">
-                                <label for="Movie Title">Enter a Movie</label><br>
-                                <input type="text" placeholder="Forrest Gump" id="title" class="filters"/>
-                              </li>
-                            </ul>
-                          </form>
                       </div>
                     <!-- Table -->
 
                       <div class="col-md-9">
-                        <table class="table table-striped">
+                        <table class="sortable table table-striped bg-dark">
                           <thead>
                             <tr>
                               <th>Title</th>
@@ -179,10 +184,7 @@
                               <th>Winner></th>
                             </tr>
                           </thead>
-                          <tbody>
-
-
-                          </tbody>
+                          <tbody  id="money_table"></tbody>
                         </table>
                       </div>
                     </div>
@@ -200,9 +202,7 @@
             
               <div class="row">
                 <div class="column">
-                  <a href="average_budget_web.png">
                     <img class="img" src="./static/images/average_budget_web.png" alt="Average Movie Budget">
-                  </a>
                 </div>
 
                 <div class="column">
