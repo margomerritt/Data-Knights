@@ -177,3 +177,21 @@ The node in the output layer will use the sigmoid activation function, as it is 
 
 Stochastic Gradient Descent is a traditional optimization function used to update the parameters in a neural network. Precisely how it works is beyond the scope of this project. However, it is worth noting that gradient descent is subject to errors that the Adam optimization function is designed to address. Thus, the Adam function will be the first that we consider when designing the neural network.
 
+### March 20, 2023
+The Data
+Initially, we began working with a dataset that was readily available from a Kaggle project that had been compiled from The Movie Database (TMDb). However, as we were working with the data, we noticed that it only contained 1,288 rows of data. For our purposes, we wanted a set that contained much more data. After already deciding on the problem to solve and beginning work on developing the website, machine learning architecture, and visualizations, we decided to use an updated dataset with over 10,000 rows. This data also originally came from TMDb, so the information contained in the data was very similar to what was previously used. Source: https://github.com/JuzerShakir/Investigate_TMDb_Movies.
+
+Methodology and Challenges
+Supervised machine learning has proven to be a significant challenge. This largely stems from the heavily imbalanced data, where a relatively very small proportion represent films that have won Oscars. As a result, the neural network can achieve high levels of accuracy by classifying every input as a movie that did not win an Oscar award. In order to combat this problem, we implemented the Synthetic Minority Oversampling Technique, or SMOTE. This works by creating new data points based on the feature values of those in the minority class. Generally, this is considered to be better than duplicating the existing data, as doing so could introduce information for the model that is not true. 
+
+Another challenge in working with this data set has been the sheer number of features present after one-hot encoding the various categorical variables. In the original data, there were 27 columns. After pre-processing in order to prepare for machine learning, the data contained 31,675 columns. However, in the context of the problem we are attempting to solve, it did not seem pertinent to drop the data from the set that produced such a high number of unique values, such as cast, director, and production companies. Thus, creating an artificial neural network with a sufficient architecture proved to be an additional challenge, as the training times quickly grew to a degree that it was not possible to run the program on a local device if the network were sufficiently large. 
+
+As a method of comparison, we had elected to also train a random forest model on the same data. This decision was made in order to account for the most common problems with neural networks, which are overfitting and susceptibility to outliers. Creating and training the random forest model was much simpler and more straightforward than it had been for the neural network.
+
+Results
+Although the task of predicting whether a given film will win an Oscar award is binary classification, the neural network’s output is a continuous value. This has prevented us from being able to produce a confusion matrix and further analyze the results, specifically the precision and recall. By using the argmax() method, though, we can see that the model effectively predicts that no movies will win an Oscar, even after implementing SMOTE as an oversampling method. Therefore, we cannot reasonably conclude that, with the time and data available, we can accurately predict whether a given movie will win an Oscar, despite the model’s high accuracy. 
+
+Accuracy:.9655
+Loss: 1.1066
+Precision: N/A
+Recall: N/A
