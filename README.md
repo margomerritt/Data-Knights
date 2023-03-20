@@ -6,7 +6,7 @@
 
 ### Purpose
 
-An analysis on movie production and how it relates to Oscar winners. The production of a movie involves a lot of variables such as budget, cast, director, genre, and runtime. All of these variables directly relate to the popularity of a movie as well its gross profit. Analyzing a dataset related to movie production will help to explore the process of how Oscar winners are picked.
+An analysis on movie production and how it relates to Oscar winners. The production of a movie involves a lot of variables such as budget, cast, director, genre, and runtime. All of these variables directly relate to the popularity of a movie as well as its gross profit. Analyzing a dataset related to movie production will help to explore the process of how Oscar winners are picked.
 
 The Oscars are awards for artistic and technical merit for the American Film Industry. The Oscar Awards are formally known as the Academy Awards and are presented by the Academy of Motion Picture Arts and Sciences.
 
@@ -71,14 +71,14 @@ The data was imported into a Jupyter notebook. The data was then imported to SQL
 ## Final Dashboard Outline
 
 Project uses JavaScript for the dashboard. Since the topic of movie productions is commonly searched for on the internet, having the dashboard hosted as a website will make the results of this project readily accessible and usable. 
-The website will have five different tabs:
+The website will have four different tabs:
 * Prediction
 * Winners
 * Money
 * Visualize
 
 This website will contain several interactive features:
-* Users will be able to search the dataset to see if a particular movie has won an Oscar Award. Users can search by filtering by movie name, actor/actress name, and year released.
+* Users will be able to search the dataset to see if a particular movie has won an Oscar Award. Users will have the ability to filter by  movie name, actor/actress name, and year released.
 * Machine Learning is used to predict if a movie will win a future Oscar Award. Users will be able to enter a director name, an actor name, and a budget. The machine learning model will be used to predict if the entered combination of movie production will win an Oscar Award.
 
 
