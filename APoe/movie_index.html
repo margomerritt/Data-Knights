@@ -24,26 +24,26 @@
           </nav>
           <!-- Jumbotron -->
           <div class="jumbotron">
-            <h1 class="display-4">Who WINS an Oscar Award?</h1>
+            <h1 class="display-4">What makes a Winning Oscar Award?</h1>
           </div>
     
           <!-- Article title and paragraph -->
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-3 article-title">
-                <h2>Winning Movies:<br> What makes an Oscar? <small>More than 1000 movies give insights</small></h2>
+                <h2>Oscar Winners:<br> Has your favorite movie won an Oscar Award? <small>Search through over 1000 movies</small></h2>
               </div>
               <div class="col-md-8 article-p">
-                <p>
-                  Is it the buget, the director, or the actors? What other vairables are involved with creating an oscar winning film?
-                   In the journy to answering these questions we (The Data Knights) found two different data sets from Kaggle.com.
-                    One of which contained movie information for over 1,000 movies, the other dataset had Oscar winning information.
-                     We merged these dataset, processed, split and trained a Machine Learning model to first find which variables were most importaint,
-                      and second be able to predict if a combination of Director, Actor and Budget would produce a Winning Oscar Award (or maybe a nomination).
-                       We also thought it would be fun if you could search for your favorite movie in the Winners tab. 
-                       The Money tab tells the story through budget and profit. With so many questions we answered a few of them in our Visualize tab.
-                        You can find our summary in the Results tab.  
-                </p>
+                <p style="font-size:18px">
+                   What factors are involved when creating an Oscar winning film? Is it the budget, the director, the actors, or behind the scenes?
+                   In the journey to answering these questions two data sets from Kaggle.com were merged to create the data below.<br>
+                   *Note* Winners column "True" = Oscar Winner, "False" = Oscar Nominee, "Blank" = Not Nominated (there for not a Oscar Winner)
+                  </p> 
+                   <ul>
+                      <li>In the "Winners" tab search for your favorite movie, creative artist, or by the year.</li>
+                      <li>The "Money" tab tells the Oscar tale through budget and profit with sortable columns.</li>
+                      <li>As curiosity was creeping in many questions are answered in the "Visualize" tab.</li> 
+                  </ul>   
               </div>
             </div>
           </div>
@@ -51,7 +51,7 @@
           <!-- PAGE TABS -->
           <!--<button class="tablink" onclick="openPage('predict', this, 'purple')"id="defaultOpen">Prediction</button>-->
           <button class="tablink" onclick="openPage('winners', this, 'red')"id="defaultOpen">Winners</button>
-          <button class="tablink" onclick="openPage('money', this, 'green')">$Money$</button>
+          <button class="tablink" onclick="openPage('money', this, 'green')">$ Money $</button>
           <button class="tablink" onclick="openPage('visualize', this, 'blue')">Visualize</button>
 
           <!--REMOVED this TAB. maybe for future use among the team. too advanced at the moment"
@@ -88,38 +88,32 @@
 
           <div id="winners" class="tabcontent">
             <h3>Winners</h3>
-            <p>Go Ahead, search the dataset to see if your favorite movie has won an Oscar Award.</p>
+            <p>Go Ahead, search the dataset to see if your favorite movie has won an Oscar Award. Or sort the columns by clicking on the title. </p>
               <!-- Filter -->
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-3">
-                <form class="bg-info"> <!-- method=post onsubmit="return buildTable(filteredData)"-->
+                <form class="bg-info"> 
                   <p>Search Filter</p>
                   <ul class="list-group">
                     
                     <li class="list-group-item bg-dark">
                         <label for="Movie Title">Enter a Movie Title</label><br>
                         <!--<input type="text" placeholder="Forrest Gump" id="title" class="filters"/>-->
-                        <input type="text" id="title" name="search" placeholder="Forrest Gump">
-                        <button onclick="  buildTable(filteredData)" type="submit">Search</button>
+                        <input type="text" id="title" name="search" placeholder="Avatar">
+                        <button id="filter-btn" type="button">Search</button>
                       </li>
                       <li class="list-group-item bg-dark">
                         <label for="Name">Enter a Name</label><br>
-                        <input type="text" placeholder="Tom Hanks" id="name" class="filters"/>
-                        <button type="submit">Search</button>
+                        <input type="text" id="name" placeholder="Tom Hanks" class="filters"/>
+                        <button id="filter-btn" type="button">Search</button>
                       </li>
                     <li class="list-group-item bg-dark">
                       <label for="date">Enter Year Released</label><br>
-                      <input type="text" placeholder="2010" id="date" class="filters"/>
-                      <button type="submit">Search</button>
+                      <input type="text" id="date" placeholder="2010" class="filters"/>
+                      <button id="filter-btn" type="button">Search</button>
                     </li>
 
-                    <!--<li class="list-group-item bg-info" >
-                      <button id="filter-btn" type="button" class="btn btn-dark">Filter Table</button>
-                  </li>>-->
-
-                  <!--<input type="search" id="search" name="search" placeholder="Search...">
-                    <button type="submit">Search</button>-->
                   </ul>
                 </form>
               </div>
@@ -127,7 +121,7 @@
             <!-- Table -->
             
               <div class="col-md-9">
-                <table class="table table-striped bg-dark">
+                <table class="sortable table table-striped bg-dark">
                   <thead>
                     <tr>
                       <th>Title</th>
@@ -137,7 +131,7 @@
                       <th>Runtime (Min)</th>
                       <th>Genres</th>
                       <th>Production Company</th>
-                      <th>Release Date</th>
+                      <th>Release Year</th>
                       <th>Category</th>
                       <th>Name</th>
                       <th>Winner</th>
@@ -145,9 +139,6 @@
                   </thead>
                   <tbody id="winner_table"></tbody>
                 </table>
-
-          
-
               </div>
             </div>
           </div>
@@ -156,7 +147,7 @@
 
           <div id="money" class="tabcontent">
             <h3>Money</h3>
-            <p>Show Me the Money!</p>
+            <p>"Show Me the Money!" Click on Column Title to sort in Ascending/ Descending order.</p>
             <div class="container-fluid">
               <div class="row bg-green">
                 <div class="col bg-green">
@@ -164,9 +155,10 @@
                     <div class="row">
                       <div class="col-md-3">
                       </div>
+                     
                     <!-- Table -->
 
-                      <div class="col-md-9">
+                      <div class="col-md-12">
                         <table class="sortable table table-striped bg-dark">
                           <thead>
                             <tr>
@@ -174,14 +166,15 @@
                               <th>Headline</th>
                               <th>Adjusted Budget</th>
                               <th>Adjusted Revenue</th>
-                              <th>Profit (Loss)</th>
+                              <th>Profit -Loss</th>
+                              <th>Director</th>
                               <th>Production Company</th>
                               <th>Genres</th>
                               <th>Category</th>
                               <th>Runtime (Min)</th>
-                              <th>Release Date</th>
+                              <th>Release Year</th>
                               <th>Name</th>
-                              <th>Winner></th>
+                              <th>Winner</th>
                             </tr>
                           </thead>
                           <tbody  id="money_table"></tbody>
@@ -197,7 +190,7 @@
 
           <div id="visualize" class="tabcontent">
             <h3>Visualization</h3>
-              <p>This are some fun graphs we made with our results.</p>
+              <p>These are some fun graphs we made with our dataset. We imediately had quesitons about our dataset and thought you would have similar questions.</p>
                 <h3>Graphs</h3>
             
               <div class="row">
@@ -213,12 +206,28 @@
                   <img class="img" src="./static/images/average_revenue_web.png" alt="Average Movie Revenue">
                 </div>
 
-                <div class="column">
+                <!--<div class="column">
                   <img class="img" src="./static/images/number_acting_web.png" alt="Number Acting">
-                </div>
+                </div>-->
 
                 <div class="column">
                   <img class="img" src="./static/images/vot_avg_web.png" alt="Average Votes">
+                </div>
+
+                <div class="column">
+                  <img class="img" src="./static/images/oscar_nominees_web.png" alt="Average Votes">
+                </div>
+
+                <div class="column">
+                  <img class="img" src="./static/images/winner_by_pop_web.png" alt="Average Votes">
+                </div>
+
+                <div class="column">
+                  <img class="img" src="./static/images/win_vs_lose_web.png" alt="Average Votes">
+                </div>
+
+                <div class="column">
+                  <img class="img" src="./static/images/profit_by_year_web.png" alt="Average Votes">
                 </div>
 
               </div>

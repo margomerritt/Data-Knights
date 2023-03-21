@@ -54,68 +54,44 @@ function buildTable(ap_oscar_data) {
 }
 
 
-// 1. Create a variable to keep track of all the filters as an object.
-var filters = {};
+//Create Search function on "Winners" table
+// TA Angle helped here. Thank you Angel for your help here and the entire program!
+function handleClick() {
 
-// 3. Use this function to update the filters. 
-
-function updateFilters() {
-  //function handleClick() {
-
-
-    // 4a. Save the element that was changed as a variable.
-   let changedElement = d3.select(this);
-
-    // 4b. Save the value that was changed as a variable.
-   let elementValue = changedElement.property("value");
-   console.log(elementValue);
-
-    // 4c. Save the id of the filter that was changed as a variable.
-   let filterId = changedElement.attr("id");
-   console.log(filterId);
+  // Grab the value from the filter
+  let title = d3.select("#title").property("value");
+  let name = d3.select("#name").property("value");
+  let year = d3.select("#date").property("value");
+  let filteredData = tableData;
   
-    // 5. If a filter value was entered then add that filterId and value
-    // to the filters list. Otherwise, clear that filter from the filters object.
-    if (elementValue) {
-      filters[filterId] = elementValue;
-    }
-    else {
-      delete filters[filterId];
-    }
-  
-    // 6. Call function to apply all filters and rebuild the table
- filterTable();
-  
+  // Check to see if title, name or year are in the filteredData
+  if (title) {
+    // Apply `filter` to the table data to only keep the
+    // rows where the `original_title` value matches the filter value
+    filteredData = filteredData.filter(row => row.original_title === title);
   }
-  
-  // 7. Use this function to filter the table when data is entered.
-  function filterTable() {
-  
-    // 8. Set the filtered data to the tableData.
-    let filteredData = tableData;
-  
-    // 9. Loop through all of the filters and keep any data that
-    // matches the filter values
-    Object.entries(filters).forEach(([key, value]) => {
-      filteredData = filteredData.filter(row => row[key] === value);
-    });
-  
-    // 10. Finally, rebuild the table using the filtered data
-    buildTable(filteredData);
+  if (name) {
+    // Apply `filter` to the table data to only keep the
+    // rows where the `name` value matches the filter value
+    filteredData = filteredData.filter(row => row.name === name);
   }
-  
-  // 2. Attach an event to listen for changes to each filter
-  
-   d3.selectAll("input").on("click", updateFilters);
+  if (year) {
+    // Apply `filter` to the table data to only keep the
+    // rows where the `year` value matches the filter value
+    filteredData = filteredData.filter(row => row.release_year === year);
+  }
 
-//   // Build the table when the page loads
-  buildTable(tableData);
+  // Rebuild the table using the filtered data
+  // @NOTE: If no date was entered, then filteredData will
+  // just be the original tableData.
+  buildTable(filteredData);
+}
 
+// Attach an event to listen for the form button
+d3.selectAll("#filter-btn").on("click", handleClick);
 
-
-
-
-
+// Build the table when the page loads
+buildTable(tableData);
 
 
 
@@ -125,20 +101,20 @@ function updateFilters() {
 const tableData2 = ap_money_data;
 
 // get table references
-var tbody = d3.select("#money_table");
+var tbody2 = d3.select("#money_table");
 
 // make sortable
 //sorttable.makeSortable(tableData2)
 
-function buildTable(ap_money_data) {
+function buildTable2(ap_money_data) {
   // First, clear out any existing data
-  tbody.html("");
+  tbody2.html("");
 
   // Next, loop through each object in the data
   // and append a row and cells for each value in the row
   ap_money_data.forEach((dataRow) => {
     // Append a row to the table body
-    let row = tbody.append("tr");
+    let row = tbody2.append("tr");
 
     // Loop through each field in the dataRow and add
     // each value as a table cell (td)
@@ -150,7 +126,7 @@ function buildTable(ap_money_data) {
 }
   
   // Build the table when the page loads
-  buildTable(tableData2);
+  buildTable2(tableData2);
 
 
 

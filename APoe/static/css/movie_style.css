@@ -1,6 +1,6 @@
 /* Set height of body and the document to 100% to enable "full page tabs" */
 body, html {
-    height: 100%;
+
     margin: 0;
     font-family: Arial;
   }
@@ -38,7 +38,7 @@ body, html {
     height: 100%;
   }
   
-  #predict {background-color: rgb(168, 30, 168)}
+  /*#predict {background-color: rgb(168, 30, 168)}*/
   #winners {background-color: rgb(166, 45, 45);}
   #money {background-color: rgb(55, 207, 55);}
   #visualize{background-color: rgb(8, 101, 249);}
@@ -48,7 +48,7 @@ body, html {
     border: 2px solid black;
     border-radius: 4px;
     padding: 15px;
-    width: 600px; 
+    width: 700px; 
     height: 500px;
     margin-left: 25px;
     margin-bottom: 25px;
