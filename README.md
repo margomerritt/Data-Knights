@@ -27,6 +27,12 @@ https://docs.google.com/presentation/d/1PBKEbv_1AAcUWEmc93uS9961zodiyv0a-1vvWwRy
 
 ### Link to interactive dashboard
 
+### Team 
+* Margo Merritt
+* Amy Poe
+* John Kuchinski
+* Kenneth Veach
+
 
 ## Resources
 
