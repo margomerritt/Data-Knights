@@ -123,23 +123,24 @@ The Oscar Awards dataset was imported into Jupyter Notebook for inspection and a
 
 ![win_vs_lose](https://user-images.githubusercontent.com/111299372/224422042-9e71ef06-5da7-4eca-affd-f513cd975dc0.png)
 
-### Profit by Year of Film:
-
-![profit_by_year](https://user-images.githubusercontent.com/111299372/226749183-c98edc90-b263-4af2-8d1a-572e0c2c0ddc.png)
-
 
 ## Results
 
 The two datasets were merged in SQL to form the "all_movie_data" dataset. The all_movie_dataset was imported into Jupyter Notebook for analysis. The data was drilled down into subsets and used to create a barchart displaying the Oscar winners by popularity level of the film.
 
-Number of Oscar Winners by Popularity Level:
+### Number of Oscar Winners by Popularity Level:
 
 ![winner_by_pop](https://user-images.githubusercontent.com/111299372/225726864-c433032e-b6b4-4fd0-bfe7-03959f04bd93.png)
 
 
-Number of Oscar Nominees by Popularity Level:
+### Number of Oscar Nominees by Popularity Level:
 
 ![oscar_nominees](https://user-images.githubusercontent.com/111299372/226194996-00d4196f-891f-4eb5-89ac-5584f554abf8.png)
+
+
+### Profit by Year of Film:
+
+![profit_by_year](https://user-images.githubusercontent.com/111299372/226749183-c98edc90-b263-4af2-8d1a-572e0c2c0ddc.png)
 
 
 ## Progress Notes
