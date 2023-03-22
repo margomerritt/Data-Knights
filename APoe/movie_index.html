@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winning_Movies</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="static/css/movie_style.css" />
+    <!--<link rel="sorttable" href="./static/js/sorttable.js" />-->
+    <script src="./static/js/sorttable.js"></script>
+</head>
+<body>
+    <body class="text-white bg-dark">
+        <div class="wrapper">
+          <!-- Navbar -->
+          <nav class="navbar navbar-info bg-gray navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">Winning Movies</a>
+          </nav>
+          <!-- Jumbotron -->
+          <div class="jumbotron">
+            <h1 class="display-4">What makes a Winning Oscar Award?</h1>
+          </div>
+    
+          <!-- Article title and paragraph -->
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-3 article-title">
+                <h2>Oscar Winners:<br> Has your favorite movie won an Oscar Award? <small>Search through over 1000 movies</small></h2>
+              </div>
+              <div class="col-md-8 article-p">
+                <p style="font-size: 22px">
+                   What factors are involved when creating an Oscar winning film? Is it the budget, the director, the actors, or behind the scenes?
+                   In the journey to answering these questions two data sets from Kaggle.com were merged to create the tables below which contains movies from 1961-2015.<br>
+                   *Note* Winners column "True" = Oscar Winner, "False" = Oscar Nominee, "Blank" = Not Nominated (there for not a Oscar Winner)
+                  </p> 
+                   <ul style="font-size: 22px">
+                      <li>In the "Winners" tab search for your favorite movie, creative artist, or by the year.</li>
+                      <li>The "Money" tab tells the Oscar tale through budget and profit with sortable columns.</li>
+                      <li>As curiosity was creeping in many questions are answered in the "Visualize" tab.</li> 
+                  </ul>   
+              </div>
+            </div>
+          </div>
+
+          <!-- PAGE TABS -->
+          <!--<button class="tablink" onclick="openPage('predict', this, 'purple')"id="defaultOpen">Prediction</button>-->
+          <button class="tablink" onclick="openPage('winners', this, 'red')"id="defaultOpen">Winners</button>
+          <button class="tablink" onclick="openPage('money', this, 'green')">$ Money $</button>
+          <button class="tablink" onclick="openPage('visualize', this, 'blue')">Visualize</button>
+
+          <!--REMOVED this TAB. maybe for future use among the team. too advanced at the moment"
+            <div id="predict" class="tabcontent">
+            <h3>Predict</h3>
+            <h4>Can we predict a future Oscar winner? </h4>
+            <p>Taking into acount the director, actors, and budget can we predict a future Oscar winner?
+              Can you find an Oscar Winning combination? Fill in the blanks to find out.  </p>-->
+                <!-- User Input for prediction ML model-->
+          <!--<div class="container-fluid">
+            <div class="row">
+              
+                <form class="bg-purple">
+                <h3>Enter Information</h3>
+                
+                    <label for="Director">Enter a Director</label>
+                    <input type="text" placeholder="Steven Spielberg" id="title" class="filters">
+                 
+                
+                    <label for="Actor">Enter an Actor</label>
+                    <input type="text" placeholder="Tom Hanks" id="name" class="filters"/>
+                  
+                  
+                    <label for="Budget">Enter a US Dollar Amount (In Millions)</label>
+                    <input type="number" placeholder="5,000,000" id="budget" class="filters"/><br>
+                
+                    <input type="submit" value="Submit">
+                </form>
+               
+            </div>
+          </div>
+          </div>-->
+       
+
+          <div id="winners" class="tabcontent">
+            <h2>Winners</h2>
+            <p style="font-size: 26px">Search the dataset to see if your favorite movie has won an Oscar Award. After seaching sort the columns by clicking on the column title. </p>
+              <!-- Filter -->
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-3">
+                <form class="bg-info"> 
+                  <p>Search Filter</p>
+                  <ul class="list-group">
+                    
+                    <li class="list-group-item bg-dark">
+                        <label for="Movie Title">Enter a Movie Title</label><br>
+                        <input type="text" id="title" name="search" placeholder="Avatar">
+                        <button id="filter-btn" type="button">Search</button>
+                      </li>
+                      <li class="list-group-item bg-dark">
+                        <label for="Name">Enter a Name</label><br>
+                        <input type="text" id="name" placeholder="George Lucas" class="filters"/>
+                        <button id="filter-btn" type="button">Search</button>
+                      </li>
+                    <li class="list-group-item bg-dark">
+                      <label for="date">Enter Year Released</label><br>
+                      <input type="text" id="date" placeholder="2010" class="filters"/>
+                      <button id="filter-btn" type="button">Search</button>
+                    </li> <br>
+
+                  </ul>
+                </form>
+              </div>
+                    
+            <!-- Table -->
+            
+              <div class="col-md-12">
+                <table class="sortable table table-striped bg-dark">
+                  <thead>
+                    <tr>
+                      <th>Title</th>
+                      <th>Cast</th>
+                      <th>Director</th>
+                      <th>Headline</th>
+                      <th>Runtime (Min)</th>
+                      <th>Genres</th>
+                      <th>Production Company</th>
+                      <th>Release Year</th>
+                      <th>Category</th>
+                      <th>Name</th>
+                      <th>Winner</th>
+                    </tr>
+                  </thead>
+                  <tbody id="winner_table"></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+          <div id="money" class="tabcontent">
+            <h2>Money</h2>
+            <p style="font-size: 26px">Quoted from Tom Cruise in the movie Jerry Maguire "SHOW ME THE MONEY!" Click on Column Title to sort in Ascending/ Descending order.</p>
+            <div class="container-fluid">
+              <div class="row bg-green">
+                <div class="col bg-green">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-md-3">
+                      </div>
+                     
+                    <!-- Table -->
+
+                      <div class="col-md-12">
+                        <table class="sortable table table-striped bg-dark">
+                          <thead>
+                            <tr>
+                              <th>Title</th>
+                              <th>Headline</th>
+                              <th>Adjusted Budget</th>
+                              <th>Adjusted Revenue</th>
+                              <th>Profit -Loss</th>
+                              <th>Director</th>
+                              <th>Production Company</th>
+                              <th>Genres</th>
+                              <th>Category</th>
+                              <th>Runtime (Min)</th>
+                              <th>Release Year</th>
+                              <th>Name</th>
+                              <th>Winner</th>
+                            </tr>
+                          </thead>
+                          <tbody  id="money_table"></tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>      
+            </div>
+          </div>
+        
+
+          <div id="visualize" class="tabcontent">
+            <h3>Visualization</h3>
+              <p style="font-size: 26px">These are some graphs made from the information found about Moives and Oscar Awards. </p>
+                <h3>Graphs</h3>
+            
+              <div class="row">
+                <div class="column">
+                    <img class="img" src="./static/images/average_budget_web.png" alt="Average Movie Budget">
+                </div>
+
+                <div class="column">
+                  <img class="img" src="./static/images/average_profit_web.png" alt="Average Movie Profit">
+                </div>
+
+                <div class="column">
+                  <img class="img" src="./static/images/average_revenue_web.png" alt="Average Movie Revenue">
+                </div>
+
+                <!--<div class="column">
+                  <img class="img" src="./static/images/number_acting_web.png" alt="Number Acting">
+                </div>-->
+
+                <div class="column">
+                  <img class="img" src="./static/images/vot_avg_web.png" alt="Average Votes">
+                </div>
+
+                <div class="column">
+                  <img class="img" src="./static/images/oscar_nominees_web.png" alt="Average Votes">
+                </div>
+
+                <div class="column">
+                  <img class="img" src="./static/images/winner_by_pop_web.png" alt="Average Votes">
+                </div>
+
+                <div class="column">
+                  <img class="img" src="./static/images/win_vs_lose_web.png" alt="Average Votes">
+                </div>
+
+                <div class="column">
+                  <img class="img" src="./static/images/profit_by_year_web.png" alt="Average Votes">
+                </div>
+
+              </div>
+          </div>
+
+          
+    
+          
+    
+              
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+        <script src="static/js/ap_oscar_data.js"></script>
+        <script src="static/js/ap_money_data.js"></script>
+        <script src="static/js/movie.js"></script> 
+      </body>
+    </html>
+    
+    
+</body>
+</html>
+
+

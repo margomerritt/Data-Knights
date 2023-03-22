@@ -1,0 +1,62 @@
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: Arial;
+  }
+  
+  /* Jumbotron with image of Oscar award and red background */
+  .jumbotron {
+    background-image: url("../images/oscar_statue.jpg");
+    background-size: 25% 100%;
+    text-align: center;
+    color: white;
+  }
+
+  /* Style tab links */
+  .tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: solid;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 33.33%;
+  }
+  
+  .tablink:hover {
+    background-color: #777;
+  }
+  
+  /* Style the tab content (and add height:100% for full page content) */
+  .tabcontent {
+    /*color: white;
+    display: none;*/
+    padding: 100px 20px;
+    height: 100%;
+  }
+  
+  /*#predict {background-color: rgb(168, 30, 168)}*/
+  #winners {background-color: rgb(166, 45, 45);}
+  #money {background-color: rgb(55, 207, 55);}
+  #visualize{background-color: rgb(8, 101, 249);}
+  
+  
+  img {
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 15px;
+    width: 700px; 
+    height: 500px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    justify-content: space-evenly;
+    display: flex;
+  }
+
+  img:hover {
+    box-shadow: 0 0 12px 12px rgba(6, 243, 140, 0.5);
+  }
