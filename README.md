@@ -31,7 +31,7 @@ https://docs.google.com/presentation/d/1PBKEbv_1AAcUWEmc93uS9961zodiyv0a-1vvWwRy
 ### Team Members 
 * Margo Merritt
 * Amy Poe
-* John Kuchinski
+* John Austin Kuchinski
 * Kenneth Veach
 
 
