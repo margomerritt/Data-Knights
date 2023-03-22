@@ -61,6 +61,17 @@ Screenshot of "The Oscar Award, 1927 - 2023" data:
 
 ### References
 
+Amy Poe References Used: 
+* Google.com
+* getbootstrap.com/docs/4.0
+* toruskit.com/docs/utilities
+* w3schools.com
+* d3js.org
+* www.convertsimple.com/convert-csv-to-javascript-array/
+* https://www.kryogenix.org/code/browser/sorttable/#pay
+
+
+
 
 ## Project Outline
 
@@ -84,15 +95,13 @@ The data was imported into a Jupyter notebook. The data was then imported to SQL
 ## Final Dashboard Outline
 
 Project uses JavaScript for the dashboard. Since the topic of movie productions is commonly searched for on the internet, having the dashboard hosted as a website will make the results of this project readily accessible and usable. 
-The website will have four different tabs:
-* Prediction
+The website will have three different tabs:
 * Winners
 * Money
 * Visualize
 
 This website will contain several interactive features:
-* Users will be able to search the dataset to see if a particular movie has won an Oscar Award. Users will have the ability to filter by  movie name, actor/actress name, and year released.
-* Machine Learning is used to predict if a movie will win a future Oscar Award. Users will be able to enter a director name, an actor name, and a budget. The machine learning model will be used to predict if the entered combination of movie production will win an Oscar Award.
+* Users will be able to search then sort the dataset to see if a particular movie has won an Oscar Award. Users will have the ability to filter by  movie name, nominee name, and year released.
 
 
 <img width="1259" alt="Prediction page" src="https://user-images.githubusercontent.com/111299372/224562912-64ab3f7b-d8fd-49d1-a820-967f04a8fe62.png">
