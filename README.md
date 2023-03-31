@@ -18,8 +18,7 @@ A group chat was formed on Slack. Slack is the primary form of communication for
 
 ### Link to hosted Website:
 
-https://s3.amazonaws.com/data.knights/movie_index.html![image](https://user-images.githubusercontent.com/111904266/229206403-69b64075-2f13-4a67-8891-ce533b2d9415.png)
-
+https://s3.amazonaws.com/data.knights/movie_index.html
 
 ### Link to Google Slide Deck
 
