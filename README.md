@@ -30,8 +30,6 @@ Slide Deck for Segment 2:
 
 https://docs.google.com/presentation/d/1PBKEbv_1AAcUWEmc93uS9961zodiyv0a-1vvWwRyaM0/edit#slide=id.gd1b6111b2f_0_12
 
-### Link to interactive dashboard
-
 ### Team Members 
 * Margo Merritt
 * Amy Poe
